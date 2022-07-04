@@ -129,7 +129,7 @@ int main(int argc,char** argv){
     #ifdef __ENABLE_HASH
     /* Added by saim*/
     else if(dist_type == "hash"){
-        graph = std::unique_ptr<GraphWrapper>(new HashKernelGraph<3>(data.get()));
+        graph = std::unique_ptr<GraphWrapper>(new HashKernelGraph<2>(data.get()));
     }
     /*-------------*/
     #endif
